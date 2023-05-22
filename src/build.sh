@@ -2,13 +2,10 @@
 
 tag="V0.0.7"
 
-# --platform linux/amd64
-docker build -t juanruguo/pycallingcards:$tag -t juanruguo/pycallingcards:latest ./
+docker buildx create --use
+docker buildx build --push --platform linux/arm64/v8,linux/amd64 -t juanruguo/pycallingcards:$tag -t juanruguo/pycallingcards:latest ./
 
-docker push juanruguo/pycallingcards:$tag
-docker push juanruguo/pycallingcards:latest
-
-docker run -p 10981:10981 juanruguo/pycallingcards
+# docker run -p 10981:10981 juanruguo/pycallingcards
 
 
 
