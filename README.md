@@ -1,4 +1,4 @@
-# PyCallingcards Docker
+# Pycallingcards Docker
 
 ## How to build
 1. Clone this repository
