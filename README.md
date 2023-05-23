@@ -11,8 +11,11 @@ as you like. For instance, change version number, modify requirements, add/drop 
 
 ### Express trial
 1. Run the following command:
-```docker run -p 10981:10981 juanruguo/pycallingcards```
+```shell
+docker run -p 10981:10981 juanruguo/pycallingcards
+```
 It will choose the most appriopriate platform for you automatically.
+
 2. Open a web browser and go to http://localhost:10981
 
 ### Advanced options
