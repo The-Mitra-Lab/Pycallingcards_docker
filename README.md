@@ -27,6 +27,14 @@ See [here](https://docs.docker.com/storage/bind-mounts/) for more details.
 
 
 ## Test files
-We provide a set of test files in the jupyter notebook for you to try out the software (Express trial).
+The container provides all the examples from [**here**](https://pycallingcards.readthedocs.io/en/latest/)
+
+## Homer usage
+The docker does not contain reference genome. If you need to use homer, please install the genome you use.
+For example, if you are using ``mm10``, please run the following in the terminal after you start your docker.
+
+```shell
+perl /homer/configureHomer.pl -install mm10
+```
 
 
